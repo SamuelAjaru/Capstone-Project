@@ -7,6 +7,8 @@ class Dashboard extends Component {
             <div>
             <h1>Welcome to the Dashboard</h1>
             <ProjectItem />
+            <ProjectItem />
+            <ProjectItem />
         </div>   
             );
     }          
