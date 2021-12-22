@@ -1,6 +1,10 @@
 import React, { Component } from "react";
+import { getProject } from "../../actions/projectActions";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import classnames from "classnames";
 
-export default class UpdateProject extends Component {
+class UpdateProject extends Component {
   render() {
     return (
       <div className="project">
@@ -60,3 +64,9 @@ export default class UpdateProject extends Component {
     );
   }
 }
+
+UpdateProject.propTypes = {
+  getProject: PropTypes.func.isRequired,
+};
+
+export default connect(null, { getProject })(UpdateProject);
